@@ -44,11 +44,11 @@ const Page = () => {
                                 }
                                 className="h-48 my-3 rounded-md overflow-hidden"
                             >
-                                <ImageBackground
+                                { <ImageBackground
                                     source={MEDITATION_IMAGES[item.id - 1]}
                                     resizeMode="cover"
                                     style={styles.backgroundImage}
-                                >
+                                > 
                                     <LinearGradient
                                         // Gradient from transparent to black
                                         colors={[
@@ -61,7 +61,7 @@ const Page = () => {
                                             {item.title}
                                         </Text>
                                     </LinearGradient>
-                                </ImageBackground>
+                                </ImageBackground> }
                             </Pressable>
                         )}
                     />
